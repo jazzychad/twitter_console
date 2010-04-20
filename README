@@ -1,0 +1,42 @@
+twitter_console v0.1 by @jazzychad
+
+LICENSE:
+    'twitter_console' has no license or anything. Hack and/or user at will for commercial or non-commercial purposes.
+    The included 'Phirehose' library is released under the GPLv2 license:
+      http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+    Phirehose library by Fenn Bailey:
+      http://code.google.com/p/phirehose/
+
+
+ABOUT:
+    'twitter_console' is a twitter streaming client using the newly released User Streams with are in pre-alpha. Stuff make break.
+    It is written in PHP. Want a ruby client? Port it yourself or use @rk's http://github.com/ryanking/earlybird instead.
+
+INSTRUCTIONS:
+
+You will need 2 terminal windows to run twitter_console. Either open up a 'screen' session, or use tabbed terminals or something.
+
+Terminal 1:
+  Edit the userstream.php file and replace "username" and "password" near the end of the file with your Twitter credentials.
+  Run the script thusly:
+    php userstream.php
+
+Terminal 2:
+  Edit twitter_console.php and replace "username" and "password" in the 'defines' at the top of the file.
+  Run the script thusly:
+    php twitter_console.php
+  Notes:
+    Some terminal emulators do not respect the terminal escape sequence to auto-scroll a subsection of the terminal window.
+    This can be fixed in one of two ways:
+       i. Run the script inside a 'screen' session (which I have found generally supports that sepcific escape secquence)
+      ii. Add a do_tweet() handler to act like the other event handlers. The downside is that you will have to hardcode the
+          number of rows in which the tweets will appear.
+
+
+NOTES:
+  By default the top sections take up 36 or so lines. If your window is smaller than this, the results are unexpected. Reduce your font-size.
+  This client is not perfect, but it is working. It is for developers only right now since User Streams are in pre-alpha phase.
+  I offer no support for twitter_console.
+
+ENJOY!
+
