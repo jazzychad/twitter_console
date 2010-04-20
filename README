@@ -28,7 +28,7 @@ Terminal 2:
   Notes:
     Some terminal emulators do not respect the terminal escape sequence to auto-scroll a subsection of the terminal window.
     This can be fixed in one of two ways:
-       i. Run the script inside a 'screen' session (which I have found generally supports that sepcific escape secquence)
+       i. Run the script inside a 'screen' session (which I have found generally supports that sepcific escape sequence)
       ii. Add a do_tweet() handler to act like the other event handlers. The downside is that you will have to hardcode the
           number of rows in which the tweets will appear.
 
