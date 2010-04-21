@@ -38,6 +38,8 @@ Terminal 2:
 NOTES:
   By default the top sections take up 36 or so lines. If your window is smaller than this, the results are unexpected. Reduce your font-size.
   This client is not perfect, but it is working. It is for developers only right now since User Streams are in pre-alpha phase.
+  This example requires System V message queue support. This is usually native in Linux distros, probably not availble on Windows or OS X. Try Ubuntu.
+  The intrepid among you will be able to combine the two files into one to avoid message queues, but best practices for the streams has said to separate the consumption and processing.
   I offer no support for twitter_console.
 
 ENJOY!
